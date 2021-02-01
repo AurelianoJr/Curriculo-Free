@@ -1,0 +1,112 @@
+@import "../components/field";
+@import "../components/range";
+
+.formulario {
+    padding: 1rem;
+
+    &__titulo {
+        text-align: center;
+        padding: 2rem 0 1rem;
+        font-family: var(--fonte-principal);
+        text-transform: uppercase;
+        font-weight: var(--peso-bold);
+        color: rgba(0, 0, 0, 0.8);
+    }
+
+    &__file-container {
+        position: relative;
+        width: 100%;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 5rem;
+    }
+
+    &__lista {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+        gap: 1rem;
+        padding: 1rem;
+        border: 1px solid rgba(0, 0, 0, 0.45);
+        opacity: 1;
+        transition: opacity 1s ease-in-out;
+    }
+
+    &__lista--hidden {
+        opacity: 0;
+        padding: 0;
+    }
+
+    &__botao {
+        outline: none;
+        transition: left 1s ease-in-out, transform 500ms ease-in-out, width 600ms ease-in-out;
+        text-align: center;
+        border-radius: 1.4rem;
+        padding: 1rem;
+
+        border: none;
+        font-family: var(--fonte-secundaria);
+        font-weight: var(--peso-bold);
+        color: var(--cor-branco);
+        background-color: var(--cor-azul);
+        width: 100%;
+    }
+
+    &__botao--alternativo {
+        width: 50%;
+        padding: 0.5rem;
+        margin: 0.5rem 0 0 50%;
+        margin-bottom: 1rem;
+        box-shadow: 7px 7px 30px rgba(0, 0, 0, 0.15);
+
+        background-color: rgb(0, 153, 102);
+        // color: #000;
+    }
+
+    &__botao--submit {
+        margin-top: 1rem;
+    }
+
+    &__botao--medio {
+        width: 60%;
+        margin-left: 40%;
+    }
+
+    &__botao--centralizado {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__botao--active {
+        left: 0;
+        transform: translate(0, -50%);
+        width: 70%;
+        font-size: 0.9rem;
+    }
+
+    &__file-label--active {
+        left: 0;
+        // transform: translate(0, -50%);
+    }
+
+    &__file-input {
+        display: none;
+    }
+
+    &__file-image {
+        border-radius: 50%;
+        width: 5rem;
+        border: 2px solid var(--cor-branco);
+        height: 5rem;
+        opacity: 0;
+        transition: opacity 1s 500ms ease-in-out;
+    }
+
+    &__file-image--ativo {
+        opacity: 1;
+    }
+}
