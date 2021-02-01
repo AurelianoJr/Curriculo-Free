@@ -1,0 +1,32 @@
+.faixa {
+    align-items: center;
+    background-color: var(--cor-cinza-claro);
+    height: 5rem;
+    left: 0;
+    padding-left: 2rem;
+    position: absolute;
+    top: 5%;
+    width: 100%;
+
+    &__nome {
+        color: var(--cor-preto);
+        font-family: var(--fonte-principal);
+        font-size: var(--tamanho-titulo-detalhe);
+        font-weight: var(--peso-titulo-faixa);
+        letter-spacing: 0.2rem;
+        margin-left: 22%;
+        position: absolute;
+        text-transform: uppercase;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__imagem {
+        border: 5px solid var(--cor-branco);
+        border-radius: 50%;
+        position: absolute;
+        top: -2rem;
+        height: 9rem;
+        width: 9rem;
+    }
+}
