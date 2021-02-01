@@ -1,0 +1,11 @@
+.lateral{
+    background-color: var(--cor-azul);
+    color: var(--cor-branco);
+    height: 100%;
+    padding: 25% .5rem 1rem 1rem;
+    width: 40%;
+}
+
+@import "../components/detalhe";
+@import "../components/faixa";
+@import "../components/qrcode";
