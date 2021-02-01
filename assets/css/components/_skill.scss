@@ -1,0 +1,84 @@
+.skill {
+    margin: 0 0 2rem 1rem;
+    position: relative;
+    width: 85%;
+
+    &::before {
+        background-color: var(--cor-branco);
+        border-radius: 0.4rem;
+        bottom: -1rem;
+        content: "";
+        height: 0.5rem;
+        left: 0;
+        position: absolute;
+        width: 100%;
+    }
+
+    &::after {
+        background-color: var(--cor-azul-claro);
+        border-radius: 0.4rem;
+        bottom: -1rem;
+        content: "";
+        height: 0.5rem;
+        left: 0;
+        position: absolute;
+    }
+
+    &--10::after {
+        width: 10%;
+    }
+    &--15::after {
+        width: 15%;
+    }
+    &--20::after {
+        width: 20%;
+    }
+    &--25::after {
+        width: 25%;
+    }
+    &--30::after {
+        width: 30%;
+    }
+    &--35::after {
+        width: 35%;
+    }
+    &--40::after {
+        width: 40%;
+    }
+    &--45::after {
+        width: 45%;
+    }
+    &--50::after {
+        width: 50%;
+    }
+    &--55::after {
+        width: 55%;
+    }
+    &--60::after {
+        width: 60%;
+    }
+    &--65::after {
+        width: 65%;
+    }
+    &--70::after {
+        width: 70%;
+    }
+    &--75::after {
+        width: 75%;
+    }
+    &--80::after {
+        width: 80%;
+    }
+    &--85::after {
+        width: 85%;
+    }
+    &--90::after {
+        width: 90%;
+    }
+    &--95::after {
+        width: 95%;
+    }
+    &--100::after {
+        width: 100%;
+    }
+}
