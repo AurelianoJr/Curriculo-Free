@@ -1,0 +1,9 @@
+node_modules
+assets/css/page/curriculo.css
+assets/css/page/curriculo.css.map
+assets/css/page/formulario.css
+assets/css/page/formulario.css.map
+assets/css/base/base.css.map
+assets/css/base/base.css
+package-lock.json
+commitlint.config.js
