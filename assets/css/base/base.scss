@@ -1,0 +1,34 @@
+@import "reset";
+@import "variaveis";
+
+* {
+    box-sizing: border-box;
+}
+
+html{
+    color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+    margin: 0 auto;
+}
+
+body {
+    font-family: var(--fonte-secundaria);
+    font-size: var(--tamanho-corpo);
+
+    @media screen and (min-width: 600px){
+        padding: 0 2%;
+    }
+
+    @media screen and (min-width: 1000px){
+        padding: 0 20%;
+    }
+}
+
+@page {
+    margin: 0;
+    padding: 0;
+}
