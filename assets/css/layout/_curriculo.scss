@@ -1,0 +1,15 @@
+.curriculo{
+    display: flex;
+    height: 29.6cm;
+    width: 21cm;
+
+    &__container{
+        position: relative;
+    }
+
+    &__main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
