@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="resume.svg" type="image/x-icon">
+        <title>Curriculo FREE</title>
+        <link rel="stylesheet" href="assets/css/base/base.css" />
+        <link rel="stylesheet" href="assets/css/page/formulario.css" />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&family=Yusei+Magic&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <header class="header">
+            <div id="animation"></div>
+            <h1 class="header__titulo">Curriculo Free</h1>
+        </header>
+        <main class="main">
+            <form class="formulario" action="">
+                <fieldset data-fieldset-pessoa>
+                    <legend class="formulario__titulo">Dados Pessoais</legend>
+                    <div class="formulario__file-container">
+                        <label class="formulario__botao formulario__botao--centralizado" for="foto">Escolha uma imagem</label>
+                        <input class="formulario__file-input" id="foto" name="foto" type="file" />
+                        <img class="formulario__file-image" data-imagem></img>
+                    </div>
+                    <datalist id="estado-civil">
+                        <option value="Solteiro"></option>
+                        <option value="Casado"></option>
+                        <option value="Separado"></option>
+                        <option value="Viuvo"></option>
+                    </datalist>
+                </fieldset>
+
+                <fieldset data-fieldset-endereco>
+                    <legend class="formulario__titulo">Endereço</legend>
+                </fieldset>
+
+                <fieldset data-fieldset-contato>
+                    <legend class="formulario__titulo">Contato</legend>
+                </fieldset>
+
+                <fieldset data-fieldset-skill>
+                    <legend class="formulario__titulo">Skill</legend>
+                </fieldset>
+
+                <fieldset data-fieldset-formacao>
+                    <legend class="formulario__titulo">Formacao</legend>
+                    <div></div>
+                    <button class="formulario__botao formulario__botao--alternativo" data-formacao-button>Adicionar Curso</button>
+                    <ul class="formulario__lista formulario__lista--hidden" data-lista-formacao></ul>
+                </fieldset>
+
+                <fieldset data-fieldset-experiencia>
+                    <legend class="formulario__titulo">Experiências</legend>
+                    <div></div>
+                    <button class="formulario__botao formulario__botao--alternativo formulario__botao--medio" data-experiencia-button>Adicionar experiência</button>
+                    <ul class="formulario__lista formulario__lista--hidden" data-lista-experiencia></ul>
+                </fieldset>
+
+                <fieldset data-fieldset-curso>
+                    <legend class="formulario__titulo">Cursos e Treinamentos</legend>
+                    <div></div>
+                    <button class="formulario__botao formulario__botao--alternativo formulario__botao--medio" data-curso-button>Adicionar curso</button>
+                    <ul class="formulario__lista formulario__lista--hidden" data-lista-curso></ul>
+                </fieldset>
+
+                <button class="formulario__botao formulario__botao--submit" id="botao-submit">Gerar Curriculo</button>
+            </form>
+        </main>
+        <script src="assets/js/app/helpers/animation/lottie.min.js"></script>
+        <script src="assets/js/app/helpers/animation/animation.js"></script>
+        <script type="module" src="assets/js/init.js"></script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/base/base.css" />
+        <link rel="stylesheet" href="assets/css/page/curriculo.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <main class="curriculo__main">
+            <div id="root" class="curriculo__container"></div>
+        </main>
+    </body>
+
+    <script type="module" src="assets/js/CurriculoInit.js"></script>
+    <script src="https://kit.fontawesome.com/4698f9a5af.js" crossorigin="anonymous"></script>
+    <script src="node_modules/qrious/dist/qrious.min.js"></script>
+    <script>
+        var containerQrCodeRenderizado = false;
+
+        function qrCodeRenderStatus(dado) {
+            if (containerQrCodeRenderizado) {
+                console.log("render");
+                qrCodeRender(dado);
+            } else {
+                setTimeout(() => {
+                    qrCodeRenderStatus();
+                }, 1000);
+            }
+        }
+
+        function qrCodeRender(dado) {
+            let qr = new QRious({
+                element: document.getElementById("qr"),
+                value: `https://api.whatsapp.com/send?phone=+55${dado}`,
+                background: "transparent",
+                foreground: "#fff",
+            });
+        }
+    </script>
+</html>
